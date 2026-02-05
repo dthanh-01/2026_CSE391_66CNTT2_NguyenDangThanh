@@ -1,19 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="b4thm.html" method="get">
-        <fieldset>
-        <label for="employee id">Employee ID</label>
-        <input type="text" id="employee id" name="employee id" value="9" readonly><br><br>
-        <label for="last name">Last Name</label>
-        <input type="text" id="last name" name="last name" value="Dodsworth" readonly><br><br>
-        <label for="first name">First Name</label>
-        <input type="text" id="first name" name="first name" ><br><br>\
-        <input type="" 
-        </fieldset>
+
+<form class="employee-form">
+
+    <fieldset>
+        <legend>Basic Info</legend>
+
+        <table>
+            <tr>
+                <td class="label">Employee ID</td>
+                <td class="value">9</td>
+            </tr>
+
+            <tr>
+                <td class="label">Last Name</td>
+                <td class="value">Dodsworth</td>
+            </tr>
+
+            <tr>
+                <td class="label">First Name</td>
+                <td><input type="text" value="Anne"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Gender</td>
+                <td class="radio-group">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> XXX</label>
+                    <label><input type="radio" name="gender" checked> ZZZ</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">Title</td>
+                <td><input type="text" value="Sales Representative"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Suffix</td>
+                <td><input type="text" value="Ms."></td>
+            </tr>
+
+            <tr>
+                <td class="label">BirthDate</td>
+                <td><input type="text" value="1969-07-02 00:00:00"></td>
+            </tr>
+
+            <tr>
+                <td class="label">HireDate</td>
+                <td><input type="text" value="1994-11-15 00:00:00"></td>
+            </tr>
+
+            <tr>
+                <td class="label">SSN # (if applicable)</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Reports To</td>
+                <td>
+                    <select>
+                        <option>Buchanan</option>
+                        <option>Fuller</option>
+                        <option>Leverling</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Info</legend>
+
+        <table>
+            <tr>
+                <td class="label">Email</td>
+                <td><input type="text" value="name@example.com"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Address</td>
+                <td><input type="text" value="7 Houndstooth Rd."></td>
+            </tr>
+
+            <tr>
+                <td class="label">City</td>
+                <td><input type="text" value="London"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Region</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Postal Code</td>
+                <td><input type="text" value="WG2 7LT"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Country</td>
+                <td>
+                    <select>
+                        <option>Russian Federation</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">US Home Phone</td>
+                <td><input type="text" value="(234)234-2342"></td>
+            </tr>
+
+            <tr>
+                <td class="label">Photo</td>
+                <td><input type="text" value="EmpID9.bmp"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Optional Info</legend>
+
+        <table>
+            <tr>
+                <td classs="label">Notes</td>
+                <td>    
+                    <textarea rows="4" cols="60">Anne has a BA degree in English from St. Lawrence college. She is fluent in French and German.ZZZ</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Preferred Shift</td>
+                <td class="radio-group">
+                    <label><input type="checkbox" name="shift"> Regular</label>
+                    <label><input type="checkbox" name="shift" checked> Gravy yard</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Active?</td>
+                <td class="radio-group">
+                    <label><input type="checkbox" name="" checked></label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Are you human?</td>
+                <td>T I D A W O</td>
+            </tr>
+        <tr>
+                <td class="label"></td>
+                <td><input type="textarea" value=""></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
 </body>
 </html>
